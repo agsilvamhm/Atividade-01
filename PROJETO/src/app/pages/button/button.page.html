@@ -1,9 +1,16 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Button</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+      </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+     <ion-button color="warning" (click)="apresentarAlert()">
+        Informe seus dados!
+     </ion-button>
+     <h2>{{e_mail}}</h2>
+     <h2>{{telefone}}</h2>
 </ion-content>
