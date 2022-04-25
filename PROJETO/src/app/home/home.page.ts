@@ -13,9 +13,8 @@ export class HomePage {
   async presentToast(messagem: string) {
     const toast = await this.toastController.create({
       message: messagem,
-      duration: 20000
+      duration: 2000
     });
     toast.present();
   }
-
 }

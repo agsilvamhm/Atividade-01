@@ -11,6 +11,22 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'button',
+    loadChildren: () => import('./pages/button/button.module').then( m => m.ButtonPageModule)
+  },
+  {
+    path: 'input',
+    loadChildren: () => import('./pages/input/input.module').then( m => m.InputPageModule)
+  },
+  {
+    path: 'welcome',
+    loadChildren: () => import('./pages/welcome/welcome.module').then( m => m.WelcomePageModule)
+  },
+  {
+    path: 'badge',
+    loadChildren: () => import('./pages/badge/badge.module').then( m => m.BadgePageModule)
+  },
 ];
 
 @NgModule({
